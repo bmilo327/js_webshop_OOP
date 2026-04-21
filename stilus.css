@@ -3,6 +3,7 @@ body {
     background-color: black;
     margin: 0;
     padding: 20px;
+    color: white;
 }
 
 article {
@@ -66,6 +67,7 @@ button{
     border-radius: 10px;
     padding: 5px 20px;
     background-color: black;
+    color: white;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -73,4 +75,8 @@ button{
 button:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.tabla img{
+    width: 25%;
 }
