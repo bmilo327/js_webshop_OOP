@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+article {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.termekek {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.termekek .kep {
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 15px;
+    padding: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.termekek .kep:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.termekek img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.kep h1 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px 0;
+    color: white;
+    text-align: center;
+}
+
+.kep p {
+    font-size: 0.9rem;
+    color: rgb(199, 199, 199);
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.gombok{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+button{
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: black;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}

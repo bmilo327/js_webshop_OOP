@@ -1,19 +1,26 @@
 export default class Kartya {
     #obj = {};
-    constructor(obj = {index, nev, leiras, kep, ar, ertekeles}, szuloElem) {
+    constructor(obj = {nev, index, leiras, kep, ar, ertekeles}, szuloElem) {
         this.#obj = obj;
         this.szuloElem = szuloElem;
         this.kartyamegjelenit();
     }
 
+    getObj(){
+        return this.#obj;
+    }
+
     kartyamegjelenit(){
         let kod = `
         <div class="kep">
-          <img src="${this.#obj.kep}" alt="">
+          <img src="${this.#obj.kep}" alt="${this.#obj.index}">
           <h1>${this.#obj.nev}</h1>
           <p>${this.#obj.leiras}</p>
-          <p>${this.#obj.ar}</p>
-          <p>${this.#obj.ertekeles}</p>
+          <p>${this.#obj.ar} Ft</p>
+          <p>${this.#obj.ertekeles}⭐</p>
+          <div class="gombok">
+            <button>🔍</button>
+            <button>🛒</button>
         </div>`;
     this.szuloElem.insertAdjacentHTML("beforeend", kod);
     }
