@@ -13,7 +13,7 @@ export default class KartyaAdmin {
                 <td>${this.#obj.leiras}</td>
                 <td><img src="${this.#obj.kep}" alt="${this.#obj.index}"></td>
                 <td>${this.#obj.ar}</td>
-                <td>${this.#obj.ertekeles}</td>
+                <td>${this.#obj.ertekeles}⭐</td>
                 <td><td>
                 <td><button class="hozaadas">✓</button></td>
                 <td><button class="torles">✕</button></td>

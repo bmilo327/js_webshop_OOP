@@ -11,7 +11,7 @@ export const TERMEKLISTA = [
         index: 1,
         nev: "Önműködő kifogásgenerátor",
         leiras: "Elkéstél? Nem csináltad meg? Ez az eszköz 1000+ kreatív kifogást generál azonnal.",
-        kep: "kepek/lathatatlan_esernyo.png",
+        kep: "kepek/onmukodo_kifogasgenerator.png",
         ar: 14490,
         ertekeles: "5/5"
     },
