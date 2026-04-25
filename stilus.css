@@ -6,6 +6,11 @@ body {
     color: white;
 }
 
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 article {
     max-width: 1200px;
     width: 90%;
@@ -54,6 +59,7 @@ article {
     color: rgb(199, 199, 199);
     margin: 0 0 10px 0;
     text-align: center;
+    flex-grow: 1;
 }
 
 .gombok{
@@ -65,16 +71,79 @@ article {
 button{
     border: 1px solid rgb(61, 61, 61);
     border-radius: 10px;
-    padding: 5px 20px;
+    padding: 10px 40px;
     background-color: black;
     color: white;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    background-color: rgb(255, 225, 0);
+    box-shadow: 0 4px 8px rgba(255, 225, 0, 0.524);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-tartalom {
+    background: black;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    max-width: 80%;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    animation: zoomIn 0.3s ease;
+}
+
+.bezar {
+    display: block;
+    justify-self: center;
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    padding: 15px 45px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bezar:hover {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.524);
+}
+
+.nagy-kartya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nagy-kartya-info {
+    text-align: center;
+}
+
+.nagy-kartya img{
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 
 .tabla img{
